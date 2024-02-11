@@ -52,6 +52,7 @@ html {
 #content {
     text-align: center;
     font-size: 20px; /* Slightly increase font size for main content */
+    padding: 10%;
 }
 
 /* Styles for #footer */
