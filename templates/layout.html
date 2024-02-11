@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    {% block head %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+    <title>stoicity - {% block title %}layout{% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+<div id="content">
+    {% block content %}{% endblock %}
+</div>
+<div id="footer">
+    {% block footer %}
+        <p>stoicity by Sachh Moka</p>
+    {% endblock %}
+</div>
+</body>
+</html>
