@@ -7,7 +7,7 @@ import json, random
 
 quotes_file = "data/quotes.json"
 
-with open(quotes_file, "r") as file:
+with open(quotes_file, "r", encoding='utf-8') as file:
     data = json.load(file)
     quotes = data["quotes"]
 
